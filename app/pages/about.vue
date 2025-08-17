@@ -23,9 +23,6 @@
             <NuxtLink to="/hobbies" class="text-gray-600 hover:text-blue-600 transition-colors">
               {{ $t('nav.hobbies') }}
             </NuxtLink>
-            <NuxtLink to="/blogs" class="text-gray-600 hover:text-blue-600 transition-colors">
-              BLOGS
-            </NuxtLink>
           </nav>
           <div class="flex items-center space-x-4">
             <button @click="toggleLanguage" class="px-3 py-1 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
@@ -127,7 +124,7 @@
             <!-- About Me Content -->
             <div class="prose prose-lg max-w-none">
               <p class="text-lg text-gray-700 mb-6">
-                Here is {{ $t('name') }} (Lance, 蔡汉霖).
+                Here is {{ $t('name') }} .
               </p>
               
               <div class="flex flex-col lg:flex-row gap-8 mb-6">

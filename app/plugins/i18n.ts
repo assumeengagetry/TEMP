@@ -7,17 +7,17 @@ export default defineNuxtPlugin(() => {
 
   const $t = (key: string) => {
     const keys = key.split('.')
-    let value = messages[currentLanguage.value as keyof typeof messages]
+    let value: any = messages[currentLanguage.value as keyof typeof messages]
     
     for (const k of keys) {
       if (value && typeof value === 'object' && k in value) {
-        value = value[k as keyof typeof value]
+        value = value[k]
       } else {
         return key
       }
     }
     
-    return value as string
+    return typeof value === 'string' ? value : key
   }
 
   const setLanguage = (lang: string) => {
