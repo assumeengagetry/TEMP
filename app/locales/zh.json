@@ -1,0 +1,190 @@
+{
+  "name": "蔡汉霖",
+  "title": "研究生 & 研究员",
+  "description": "热衷于无线网络、网络安全和人工智能研究。",
+  "nav": {
+    "home": "首頁",
+    "about": "關於我",
+    "publications": "出版物",
+    "awards": "獎項",
+    "hobbies": "愛好"
+  },
+  "home": {
+    "aboutDesc": "了解更多關於我的背景、經驗和技能",
+    "publicationsDesc": "探索我的研究論文和學術出版物",
+    "awardsDesc": "查看我的成就和認可",
+    "hobbiesDesc": "發現我工作之外的興趣和活動"
+  },
+  "about": {
+    "title": "关于我",
+    "location": "剑桥，英国",
+    "aboutMe": "关于我",
+    "description": "我是剑桥大学万物互联组的研究生，在Ozgur Akan教授的指导下，获得剑桥信托基金和中国国家留学基金委奖学金资助。",
+    "description2": "我的研究兴趣包括无线网络、网络安全和人工智能。我相信创造能够对人们生活产生积极影响的技术。",
+    "experience": "研究经验",
+    "job1": {
+      "title": "研究生",
+      "company": "剑桥大学",
+      "period": "2023 - 至今",
+      "description": "在万物互联组进行研究，专注于无线网络和物联网技术。"
+    },
+    "job2": {
+      "title": "研究助理",
+      "company": "前大学",
+      "period": "2021 - 2023",
+      "description": "在Zhezhuang Xu教授和Meng Yuan博士的指导下研究无线网络和网络安全。"
+    },
+    "education": "教育背景",
+    "degree": "计算机科学哲学硕士",
+    "university": "剑桥大学",
+    "graduation": "2025 (预期)",
+    "major": "专攻无线网络和物联网",
+    "skills": "研究领域",
+    "frontend": "无线网络",
+    "backend": "网络安全"
+  },
+  "publications": {
+    "title": "出版物",
+    "subtitle": "我的研究贡献和学术出版物",
+    "journalPapers": "期刊论文",
+    "paper1": {
+      "title": "网页应用程序的高级机器学习技术",
+      "authors": "张三, 李四, 王五",
+      "journal": "计算机科学期刊",
+      "year": "2023",
+      "abstract": "本文提出了在现代网页应用程序中实现机器学习算法的新方法。"
+    },
+    "paper2": {
+      "title": "现代网页框架中的用户体验设计",
+      "authors": "张三, 赵六, 孙七",
+      "journal": "国际网页工程期刊",
+      "year": "2022",
+      "abstract": "对当代网页开发框架中用户体验模式的综合研究。"
+    },
+    "conferencePapers": "会议论文",
+    "conf1": {
+      "title": "Vue.js应用程序中的实时数据处理",
+      "authors": "张三, 周八",
+      "conference": "网页开发会议 2023",
+      "year": "2023",
+      "abstract": "在Vue.js应用程序中高效实时数据处理技术的展示。"
+    },
+    "conf2": {
+      "title": "现代网页应用程序的性能优化",
+      "authors": "张三, 吴九, 郑十",
+      "conference": "前端峰会 2022",
+      "year": "2022",
+      "abstract": "现代网页应用程序性能优化策略分析。"
+    },
+    "books": "书籍和章节",
+    "book1": {
+      "title": "使用Vue.js进行现代网页开发",
+      "authors": "张三, 冯十一",
+      "publisher": "科技出版社",
+      "year": "2021",
+      "description": "使用Vue.js框架构建现代网页应用程序的综合指南。"
+    },
+    "viewPaper": "查看论文",
+    "viewBook": "查看书籍",
+    "download": "下载",
+    "statistics": "出版物统计",
+    "totalPapers": "总论文数",
+    "journalPapers": "期刊论文",
+    "conferencePapers": "会议论文",
+    "books": "书籍"
+  },
+  "awards": {
+    "title": "奖项和认可",
+    "subtitle": "职业生涯中的荣誉和成就",
+    "academicAwards": "学术奖项",
+    "award1": {
+      "title": "优秀研究生奖",
+      "organization": "斯坦福大学",
+      "year": "2018",
+      "description": "因研究生期间的卓越学术表现和研究贡献而获得认可。"
+    },
+    "award2": {
+      "title": "最佳研究论文奖",
+      "organization": "国际网页会议",
+      "year": "2022",
+      "description": "因在网页技术和用户体验方面最具创新性的研究论文而获奖。"
+    },
+    "researchAwards": "研究奖项",
+    "award3": {
+      "title": "技术创新奖",
+      "organization": "科技创新基金会",
+      "year": "2023",
+      "description": "因在网页应用程序开发方面开发创新解决方案而获得认可。"
+    },
+    "award4": {
+      "title": "研究卓越奖",
+      "organization": "计算机科学学会",
+      "year": "2021",
+      "description": "因对计算机科学研究和开发的杰出贡献而获奖。"
+    },
+    "professionalAwards": "专业奖项",
+    "award5": {
+      "title": "年度员工",
+      "organization": "科技公司",
+      "year": "2023",
+      "description": "因卓越的表现、领导力和对公司成功的贡献而获得认可。"
+    },
+    "award6": {
+      "title": "最佳开发者奖",
+      "organization": "开发者社区",
+      "year": "2022",
+      "description": "因对开发者社区和开源项目的杰出贡献而被同行投票选出。"
+    },
+    "statistics": "奖项统计",
+    "totalAwards": "总奖项数",
+    "academicAwards": "学术奖项",
+    "researchAwards": "研究奖项",
+    "professionalAwards": "专业奖项"
+  },
+  "hobbies": {
+    "title": "爱好和兴趣",
+    "subtitle": "让我保持灵感和平衡的活动和兴趣",
+    "photography": {
+      "title": "摄影",
+      "description": "通过镜头捕捉瞬间并探索世界。我喜欢风景、人像和街头摄影。"
+    },
+    "reading": {
+      "title": "阅读",
+      "description": "热衷于阅读小说、非小说和科幻小说。书籍帮助我获得新的视角和知识。"
+    },
+    "hiking": {
+      "title": "徒步旅行",
+      "description": "探索自然小径和山脉。徒步旅行帮助我保持活跃并与自然世界建立联系。"
+    },
+    "cooking": {
+      "title": "烹饪",
+      "description": "尝试不同的菜系和食谱。烹饪既是治疗性的，也是创意的出口。"
+    },
+    "music": {
+      "title": "音乐",
+      "description": "聆听各种流派，包括爵士乐、古典音乐和摇滚乐。音乐激发创造力和放松。"
+    },
+    "travel": {
+      "title": "旅行",
+      "description": "探索新文化和目的地。旅行拓宽视野并创造持久的回忆。"
+    },
+    "recentActivities": "最近活动",
+    "lastWeek": "上周",
+    "thisWeek": "本周",
+    "activity1": "完成了摄影工作坊",
+    "activity2": "读完了《编程的艺术》",
+    "activity3": "徒步登上了塔玛尔派斯山",
+    "activity4": "从头开始制作意大利面",
+    "activity5": "参加了爵士音乐会",
+    "activity6": "计划去日本旅行",
+    "favoriteQuotes": "最喜欢的引言",
+    "quote1": {
+      "text": "预测未来最好的方法就是发明它。",
+      "author": "艾伦·凯"
+    },
+    "quote2": {
+      "text": "生活就是当你忙于制定其他计划时发生的事情。",
+      "author": "约翰·列侬"
+    }
+  }
+}
