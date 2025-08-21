@@ -5,28 +5,28 @@
       <div class="max-w-6xl mx-auto px-4">
         <div class="flex justify-between items-center py-4">
           <div class="text-2xl font-bold text-gray-800">
-            {{ $t('name') }}
+            {{ t('name') }}
           </div>
           <div class="hidden md:flex space-x-8">
             <NuxtLink to="/" class="text-gray-600 hover:text-blue-600 transition-colors">
-              {{ $t('nav.home') }}
+              {{ t('nav.home') }}
             </NuxtLink>
             <NuxtLink to="/about" class="text-gray-600 hover:text-blue-600 transition-colors">
-              {{ $t('nav.about') }}
+              {{ t('nav.about') }}
             </NuxtLink>
             <NuxtLink to="/publications" class="text-gray-600 hover:text-blue-600 transition-colors">
-              {{ $t('nav.publications') }}
+              {{ t('nav.publications') }}
             </NuxtLink>
             <NuxtLink to="/awards" class="text-gray-600 hover:text-blue-600 transition-colors">
-              {{ $t('nav.awards') }}
+              {{ t('nav.awards') }}
             </NuxtLink>
             <NuxtLink to="/hobbies" class="text-gray-600 hover:text-blue-600 transition-colors">
-              {{ $t('nav.hobbies') }}
+              {{ t('nav.hobbies') }}
             </NuxtLink>
           </div>
           <div class="flex items-center space-x-4">
             <button @click="toggleLanguage" class="px-3 py-1 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
-              {{ $currentLanguage === 'en' ? '中文' : 'English' }}
+              {{ currentLanguage === 'en' ? '中文' : 'English' }}
             </button>
           </div>
         </div>
@@ -37,16 +37,16 @@
     <div class="max-w-6xl mx-auto px-4 py-20">
       <div class="text-center">
         <div class="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-r from-yellow-400 to-blue-500 flex items-center justify-center">
-          <span class="text-4xl text-white font-bold">{{ $t('name').charAt(0) }}</span>
+          <span class="text-4xl text-white font-bold">{{ t('name').charAt(0) }}</span>
         </div>
         <h1 class="text-5xl font-bold text-gray-800 mb-4">
-          {{ $t('name') }}
+          {{ t('name') }}
         </h1>
         <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-          {{ $t('title') }}
+          {{ t('title') }}
         </p>
         <p class="text-lg text-gray-500 mb-12 max-w-3xl mx-auto">
-          {{ $t('description') }}
+          {{ t('description') }}
         </p>
         
         <!-- Social Links -->
@@ -71,20 +71,20 @@
         <!-- Quick Links -->
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <NuxtLink to="/about" class="bg-gradient-to-br from-yellow-50 to-blue-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-yellow-200">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">{{ $t('nav.about') }}</h3>
-            <p class="text-gray-600">{{ $t('home.aboutDesc') }}</p>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">{{ t('nav.about') }}</h3>
+            <p class="text-gray-600">{{ t('home.aboutDesc') }}</p>
           </NuxtLink>
           <NuxtLink to="/publications" class="bg-gradient-to-br from-blue-50 to-yellow-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-blue-200">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">{{ $t('nav.publications') }}</h3>
-            <p class="text-gray-600">{{ $t('home.publicationsDesc') }}</p>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">{{ t('nav.publications') }}</h3>
+            <p class="text-gray-600">{{ t('home.publicationsDesc') }}</p>
           </NuxtLink>
           <NuxtLink to="/awards" class="bg-gradient-to-br from-yellow-50 to-blue-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-yellow-200">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">{{ $t('nav.awards') }}</h3>
-            <p class="text-gray-600">{{ $t('home.awardsDesc') }}</p>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">{{ t('nav.awards') }}</h3>
+            <p class="text-gray-600">{{ t('home.awardsDesc') }}</p>
           </NuxtLink>
           <NuxtLink to="/hobbies" class="bg-gradient-to-br from-blue-50 to-yellow-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-blue-200">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">{{ $t('nav.hobbies') }}</h3>
-            <p class="text-gray-600">{{ $t('home.hobbiesDesc') }}</p>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">{{ t('nav.hobbies') }}</h3>
+            <p class="text-gray-600">{{ t('home.hobbiesDesc') }}</p>
           </NuxtLink>
         </div>
       </div>
@@ -93,10 +93,5 @@
 </template>
 
 <script setup>
-const { $t, $setLanguage, $currentLanguage } = useNuxtApp()
-
-const toggleLanguage = () => {
-  const newLang = $currentLanguage.value === 'en' ? 'zh' : 'en'
-  $setLanguage(newLang)
-}
+const { t, toggleLanguage, currentLanguage } = useLanguage()
 </script>

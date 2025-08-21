@@ -5,28 +5,28 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center py-4">
           <div class="text-3xl font-bold text-gray-900">
-            {{ $t('name') }}
+            {{ t('name') }}
           </div>
           <nav class="hidden md:flex space-x-8">
             <NuxtLink to="/" class="text-gray-600 hover:text-blue-600 transition-colors">
-              {{ $t('nav.home') }}
+              {{ t('nav.home') }}
             </NuxtLink>
             <NuxtLink to="/about" class="text-blue-600 font-semibold border-b-2 border-blue-600">
-              {{ $t('nav.about') }}
+              {{ t('nav.about') }}
             </NuxtLink>
             <NuxtLink to="/publications" class="text-gray-600 hover:text-blue-600 transition-colors">
-              {{ $t('nav.publications') }}
+              {{ t('nav.publications') }}
             </NuxtLink>
             <NuxtLink to="/awards" class="text-gray-600 hover:text-blue-600 transition-colors">
-              {{ $t('nav.awards') }}
+              {{ t('nav.awards') }}
             </NuxtLink>
             <NuxtLink to="/hobbies" class="text-gray-600 hover:text-blue-600 transition-colors">
-              {{ $t('nav.hobbies') }}
+              {{ t('nav.hobbies') }}
             </NuxtLink>
           </nav>
           <div class="flex items-center space-x-4">
             <button @click="toggleLanguage" class="px-3 py-1 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
-              {{ $currentLanguage === 'en' ? '中文' : 'English' }}
+              {{ currentLanguage === 'en' ? '中文' : 'English' }}
             </button>
           </div>
         </div>
@@ -42,9 +42,9 @@
             <!-- Profile Picture -->
             <div class="flex flex-col items-center mb-6">
               <div class="w-48 h-48 rounded-full bg-gradient-to-r from-yellow-400 to-blue-500 flex items-center justify-center mb-4">
-                <span class="text-6xl text-white font-bold">{{ $t('name').charAt(0) }}</span>
+                <span class="text-6xl text-white font-bold">{{ t('name').charAt(0) }}</span>
               </div>
-              <h2 class="text-xl font-semibold text-gray-800 text-center">{{ $t('name') }}</h2>
+              <h2 class="text-xl font-semibold text-gray-800 text-center">{{ t('name') }}</h2>
             </div>
 
             <!-- Contact Links -->
@@ -119,18 +119,18 @@
         <!-- Right Content -->
         <div class="lg:w-2/3">
           <div class="bg-white rounded-lg shadow-lg p-8">
-            <h1 class="text-4xl font-bold text-gray-900 mb-8">{{ $t('about.title') }}</h1>
+            <h1 class="text-4xl font-bold text-gray-900 mb-8">{{ t('about.title') }}</h1>
             
             <!-- About Me Content -->
             <div class="prose prose-lg max-w-none">
               <p class="text-lg text-gray-700 mb-6">
-                Here is {{ $t('name') }} .
+                Here is {{ t('name') }} .
               </p>
               
               <div class="flex flex-col lg:flex-row gap-8 mb-6">
                 <div class="flex-1">
                   <p class="text-gray-700 mb-4">
-                    {{ $t('about.description') }} I also had the pleasure of participating in a summer research program with Prof. Pietro Liò at the Artificial Intelligence Group.
+                    {{ t('about.description') }} I also had the pleasure of participating in a summer research program with Prof. Pietro Liò at the Artificial Intelligence Group.
                   </p>
                   
                   <p class="text-gray-700 mb-4">
@@ -138,7 +138,7 @@
                   </p>
                   
                   <p class="text-gray-700">
-                    {{ $t('about.description2') }} If you are interested in any aspect of me, I am always open to discussions and academic collaborations. Feel free to reach out to me at — <a href="mailto:hc663@cam.ac.uk" class="text-blue-600 hover:text-blue-800">hc663 [at] cam.ac.uk</a>
+                    {{ t('about.description2') }} If you are interested in any aspect of me, I am always open to discussions and academic collaborations. Feel free to reach out to me at — <a href="mailto:hc663@cam.ac.uk" class="text-blue-600 hover:text-blue-800">hc663 [at] cam.ac.uk</a>
                   </p>
                 </div>
                 
@@ -170,10 +170,5 @@
 </template>
 
 <script setup>
-const { $t, $setLanguage, $currentLanguage } = useNuxtApp()
-
-const toggleLanguage = () => {
-  const newLang = $currentLanguage.value === 'en' ? 'zh' : 'en'
-  $setLanguage(newLang)
-}
+const { t, toggleLanguage, currentLanguage } = useLanguage()
 </script>

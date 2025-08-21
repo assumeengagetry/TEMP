@@ -75,7 +75,9 @@ nuxt-app/
 │   │   ├── en.json      # 英文
 │   │   └── zh.json      # 中文
 │   ├── plugins/         # 插件
-│   │   └── i18n.client.ts  # 國際化插件
+│   │   └── i18n.ts      # 國際化插件
+│   ├── composables/     # 組合式函數
+│   │   └── useLanguage.ts # 語言管理
 │   └── assets/          # 靜態資源
 │       └── css/
 │           └── main.css # 主樣式文件

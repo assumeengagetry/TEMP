@@ -5,28 +5,28 @@
       <div class="max-w-6xl mx-auto px-4">
         <div class="flex justify-between items-center py-4">
           <div class="text-2xl font-bold text-gray-800">
-            {{ $t('name') }}
+            {{ t('name') }}
           </div>
           <div class="hidden md:flex space-x-8">
             <NuxtLink to="/" class="text-gray-600 hover:text-blue-600 transition-colors">
-              {{ $t('nav.home') }}
+              {{ t('nav.home') }}
             </NuxtLink>
             <NuxtLink to="/about" class="text-gray-600 hover:text-blue-600 transition-colors">
-              {{ $t('nav.about') }}
+              {{ t('nav.about') }}
             </NuxtLink>
             <NuxtLink to="/publications" class="text-gray-600 hover:text-blue-600 transition-colors">
-              {{ $t('nav.publications') }}
+              {{ t('nav.publications') }}
             </NuxtLink>
             <NuxtLink to="/awards" class="text-gray-600 hover:text-blue-600 transition-colors">
-              {{ $t('nav.awards') }}
+              {{ t('nav.awards') }}
             </NuxtLink>
             <NuxtLink to="/hobbies" class="text-blue-600 font-semibold">
-              {{ $t('nav.hobbies') }}
+              {{ t('nav.hobbies') }}
             </NuxtLink>
           </div>
           <div class="flex items-center space-x-4">
             <button @click="toggleLanguage" class="px-3 py-1 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
-              {{ $currentLanguage === 'en' ? '中文' : 'English' }}
+              {{ currentLanguage === 'en' ? '中文' : 'English' }}
             </button>
           </div>
         </div>
@@ -37,10 +37,10 @@
     <div class="max-w-6xl mx-auto px-4 py-12">
       <div class="text-center mb-12">
         <h1 class="text-4xl font-bold text-gray-800 mb-4">
-          {{ $t('hobbies.title') }}
+          {{ t('hobbies.title') }}
         </h1>
         <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-          {{ $t('hobbies.subtitle') }}
+          {{ t('hobbies.subtitle') }}
         </p>
       </div>
 
@@ -55,8 +55,8 @@
             </svg>
           </div>
           <div class="p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">{{ $t('hobbies.photography.title') }}</h3>
-            <p class="text-gray-600 mb-4">{{ $t('hobbies.photography.description') }}</p>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">{{ t('hobbies.photography.title') }}</h3>
+            <p class="text-gray-600 mb-4">{{ t('hobbies.photography.description') }}</p>
             <div class="flex flex-wrap gap-2">
               <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">Landscape</span>
               <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">Portrait</span>
@@ -73,8 +73,8 @@
             </svg>
           </div>
           <div class="p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">{{ $t('hobbies.reading.title') }}</h3>
-            <p class="text-gray-600 mb-4">{{ $t('hobbies.reading.description') }}</p>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">{{ t('hobbies.reading.title') }}</h3>
+            <p class="text-gray-600 mb-4">{{ t('hobbies.reading.description') }}</p>
             <div class="flex flex-wrap gap-2">
               <span class="px-2 py-1 bg-yellow-100 text-yellow-800 rounded text-sm">Fiction</span>
               <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">Non-fiction</span>
@@ -92,8 +92,8 @@
             </svg>
           </div>
           <div class="p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">{{ $t('hobbies.hiking.title') }}</h3>
-            <p class="text-gray-600 mb-4">{{ $t('hobbies.hiking.description') }}</p>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">{{ t('hobbies.hiking.title') }}</h3>
+            <p class="text-gray-600 mb-4">{{ t('hobbies.hiking.description') }}</p>
             <div class="flex flex-wrap gap-2">
               <span class="px-2 py-1 bg-yellow-100 text-yellow-800 rounded text-sm">Mountains</span>
               <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">Trails</span>
@@ -110,8 +110,8 @@
             </svg>
           </div>
           <div class="p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">{{ $t('hobbies.cooking.title') }}</h3>
-            <p class="text-gray-600 mb-4">{{ $t('hobbies.cooking.description') }}</p>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">{{ t('hobbies.cooking.title') }}</h3>
+            <p class="text-gray-600 mb-4">{{ t('hobbies.cooking.description') }}</p>
             <div class="flex flex-wrap gap-2">
               <span class="px-2 py-1 bg-yellow-100 text-yellow-800 rounded text-sm">Italian</span>
               <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">Asian</span>
@@ -128,8 +128,8 @@
             </svg>
           </div>
           <div class="p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">{{ $t('hobbies.music.title') }}</h3>
-            <p class="text-gray-600 mb-4">{{ $t('hobbies.music.description') }}</p>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">{{ t('hobbies.music.title') }}</h3>
+            <p class="text-gray-600 mb-4">{{ t('hobbies.music.description') }}</p>
             <div class="flex flex-wrap gap-2">
               <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">Jazz</span>
               <span class="px-2 py-1 bg-yellow-100 text-yellow-800 rounded text-sm">Classical</span>
@@ -146,8 +146,8 @@
             </svg>
           </div>
           <div class="p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">{{ $t('hobbies.travel.title') }}</h3>
-            <p class="text-gray-600 mb-4">{{ $t('hobbies.travel.description') }}</p>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">{{ t('hobbies.travel.title') }}</h3>
+            <p class="text-gray-600 mb-4">{{ t('hobbies.travel.description') }}</p>
             <div class="flex flex-wrap gap-2">
               <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">Europe</span>
               <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">Asia</span>
@@ -159,40 +159,40 @@
 
       <!-- Recent Activities -->
       <div class="mt-16">
-        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">{{ $t('hobbies.recentActivities') }}</h2>
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">{{ t('hobbies.recentActivities') }}</h2>
         <div class="bg-gradient-to-br from-blue-50 to-yellow-50 rounded-lg shadow-lg p-8 border border-blue-200">
           <div class="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 class="text-xl font-semibold text-gray-800 mb-4">{{ $t('hobbies.lastWeek') }}</h3>
+              <h3 class="text-xl font-semibold text-gray-800 mb-4">{{ t('hobbies.lastWeek') }}</h3>
               <div class="space-y-4">
                 <div class="flex items-center space-x-3">
                   <div class="w-3 h-3 bg-blue-500 rounded-full"></div>
-                  <span class="text-gray-600">{{ $t('hobbies.activity1') }}</span>
+                  <span class="text-gray-600">{{ t('hobbies.activity1') }}</span>
                 </div>
                 <div class="flex items-center space-x-3">
                   <div class="w-3 h-3 bg-green-500 rounded-full"></div>
-                  <span class="text-gray-600">{{ $t('hobbies.activity2') }}</span>
+                  <span class="text-gray-600">{{ t('hobbies.activity2') }}</span>
                 </div>
                 <div class="flex items-center space-x-3">
                   <div class="w-3 h-3 bg-purple-500 rounded-full"></div>
-                  <span class="text-gray-600">{{ $t('hobbies.activity3') }}</span>
+                  <span class="text-gray-600">{{ t('hobbies.activity3') }}</span>
                 </div>
               </div>
             </div>
             <div>
-              <h3 class="text-xl font-semibold text-gray-800 mb-4">{{ $t('hobbies.thisWeek') }}</h3>
+              <h3 class="text-xl font-semibold text-gray-800 mb-4">{{ t('hobbies.thisWeek') }}</h3>
               <div class="space-y-4">
                 <div class="flex items-center space-x-3">
                   <div class="w-3 h-3 bg-orange-500 rounded-full"></div>
-                  <span class="text-gray-600">{{ $t('hobbies.activity4') }}</span>
+                  <span class="text-gray-600">{{ t('hobbies.activity4') }}</span>
                 </div>
                 <div class="flex items-center space-x-3">
                   <div class="w-3 h-3 bg-red-500 rounded-full"></div>
-                  <span class="text-gray-600">{{ $t('hobbies.activity5') }}</span>
+                  <span class="text-gray-600">{{ t('hobbies.activity5') }}</span>
                 </div>
                 <div class="flex items-center space-x-3">
                   <div class="w-3 h-3 bg-indigo-500 rounded-full"></div>
-                  <span class="text-gray-600">{{ $t('hobbies.activity6') }}</span>
+                  <span class="text-gray-600">{{ t('hobbies.activity6') }}</span>
                 </div>
               </div>
             </div>
@@ -202,19 +202,19 @@
 
       <!-- Favorite Quotes -->
       <div class="mt-16">
-        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">{{ $t('hobbies.favoriteQuotes') }}</h2>
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">{{ t('hobbies.favoriteQuotes') }}</h2>
         <div class="grid md:grid-cols-2 gap-6">
           <div class="bg-gradient-to-br from-yellow-50 to-blue-50 rounded-lg shadow-lg p-6 border border-yellow-200">
             <blockquote class="text-gray-600 italic mb-4">
-              "{{ $t('hobbies.quote1.text') }}"
+              "{{ t('hobbies.quote1.text') }}"
             </blockquote>
-            <cite class="text-gray-500">— {{ $t('hobbies.quote1.author') }}</cite>
+            <cite class="text-gray-500">— {{ t('hobbies.quote1.author') }}</cite>
           </div>
           <div class="bg-gradient-to-br from-blue-50 to-yellow-50 rounded-lg shadow-lg p-6 border border-blue-200">
             <blockquote class="text-gray-600 italic mb-4">
-              "{{ $t('hobbies.quote2.text') }}"
+              "{{ t('hobbies.quote2.text') }}"
             </blockquote>
-            <cite class="text-gray-500">— {{ $t('hobbies.quote2.author') }}</cite>
+            <cite class="text-gray-500">— {{ t('hobbies.quote2.author') }}</cite>
           </div>
         </div>
       </div>
@@ -223,10 +223,5 @@
 </template>
 
 <script setup>
-const { $t, $setLanguage, $currentLanguage } = useNuxtApp()
-
-const toggleLanguage = () => {
-  const newLang = $currentLanguage.value === 'en' ? 'zh' : 'en'
-  $setLanguage(newLang)
-}
+const { t, toggleLanguage, currentLanguage } = useLanguage()
 </script>
