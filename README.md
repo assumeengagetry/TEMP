@@ -79,10 +79,10 @@ pnpm install
 # 編譯
 pnpm build
 
-# 啟動
-pnpm start
-# 或用 pm2
-pm2 start .output/server/index.mjs --name nuxt-app --interpreter node
+# 啟動（使用 node 直接啟動）
+node .output/server/index.mjs
+# 或用 pm2 (推薦)
+pm2 start .output/server/index.mjs --name nuxt-app
 ```
 
 4. 安裝和配置 Nginx
