@@ -1,6 +1,173 @@
 # 個人網站 - Nuxt.js
 
-這是一個使用 Nuxt.js 框架構建的現代化個人網站，包含以下功能：
+本專案是一個基於 Nuxt 3、TypeScript、Tailwind CSS 的個人網站，支援多語言（英文、中文），適合用於個人簡介、作品集展示。
+
+## 目錄結構
+
+```
+nuxt-app/
+├── app/
+│   ├── assets/css/main.css         # Tailwind 主樣式
+│   ├── composables/useLanguage.ts # 語言切換組件
+│   ├── locales/                   # 多語言 JSON
+│   │   ├── en.json
+│   │   └── zh.json
+│   ├── pages/                     # 各頁面
+│   │   ├── about.vue
+│   │   ├── awards.vue
+│   │   ├── hobbies.vue
+│   │   ├── index.vue
+│   │   └── publications.vue
+│   └── plugins/i18n.ts            # i18n 插件
+├── public/                        # 公共資源
+│   ├── favicon.ico
+│   └── robots.txt
+├── nuxt.config.ts                 # Nuxt 設定
+├── package.json                   # 依賴管理
+├── tailwind.config.js             # Tailwind 設定
+├── tsconfig.json                  # TypeScript 設定
+├── update-translations.js         # 翻譯自動化腳本
+└── README.md                      # 專案說明
+```
+
+## 快速開始
+
+### 1. 安裝依賴
+
+```bash
+pnpm install
+# 或
+npm install
+```
+
+### 2. 本地開發
+
+```bash
+pnpm dev
+# 或
+npm run dev
+```
+
+預設啟動於 http://localhost:3000
+
+### 3. 編譯與部署
+
+```bash
+pnpm build
+# 或
+npm run build
+
+# 啟動 production server
+pnpm start
+# 或
+npm run start
+```
+
+### 4. VPS 部署（Ubuntu 範例）
+
+1. 安裝 Node.js、pnpm（或 npm）
+2. 將專案上傳至 VPS
+3. 安裝依賴、編譯、啟動（可用 pm2 管理進程）
+
+```bash
+# 進入專案目錄
+cd ~/nuxt-app
+
+# 安裝依賴
+pnpm install
+
+# 編譯
+pnpm build
+
+# 啟動
+pnpm start
+# 或用 pm2
+pm2 start .output/server/index.mjs --name nuxt-app --interpreter node
+```
+
+4. 安裝和配置 Nginx
+
+```bash
+# 安裝 Nginx
+sudo apt update
+sudo apt install nginx
+
+# 建立 Nginx 配置檔
+sudo nano /etc/nginx/sites-available/nuxt-app
+
+# 貼上以下配置（記得修改 domain.com 為你的域名）
+server {
+    listen 80;
+    server_name domain.com www.domain.com;
+
+    location / {
+        proxy_pass http://localhost:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+
+# 建立軟連結啟用配置
+sudo ln -s /etc/nginx/sites-available/nuxt-app /etc/nginx/sites-enabled/
+
+# 測試配置是否正確
+sudo nginx -t
+
+# 重啟 Nginx
+sudo systemctl restart nginx
+```
+
+5. 設定 SSL（使用 Let's Encrypt）
+
+```bash
+# 安裝 Certbot
+sudo apt install certbot python3-certbot-nginx
+
+# 申請和安裝 SSL 證書（記得修改 domain.com）
+sudo certbot --nginx -d domain.com -d www.domain.com
+
+# Certbot 會自動修改 Nginx 配置並重啟
+```
+
+6. 設定防火牆
+
+```bash
+# 開放 HTTP 和 HTTPS 端口
+sudo ufw allow 80
+sudo ufw allow 443
+
+# 如果防火牆未啟用，啟用它
+sudo ufw enable
+```
+
+7. 設定 DNS
+- 在你的域名管理面板中，添加 A 記錄
+- 將你的域名指向你的 VPS IP 地址
+- DNS 生效可能需要幾分鐘到幾小時
+
+完成後，訪問 https://domain.com 即可看到你的網站。
+
+
+## 主要技術棧
+- [Nuxt 3](https://nuxt.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [vue-i18n](https://vue-i18n.intlify.dev/)
+
+## 多語言切換
+- 語言檔案位於 `app/locales/`
+- 語言切換邏輯於 `app/composables/useLanguage.ts`
+
+## 其他
+- 如需自訂內容，請修改 `app/pages/` 下的 Vue 檔案
+- 如需新增語言，請於 `app/locales/` 新增對應 JSON
+
+---
+
+如有問題，歡迎提 issue 或聯絡作者。
 
 ## 功能特色
 
