@@ -1,40 +1,61 @@
-# 使用 Node.js 官方镜像作为基础镜像
+# 使用 Node.js 官方鏡像作為基礎鏡像
 FROM node:20-slim AS builder
 
-# 安装 pnpm
+# 設置構建參數
+ARG NODE_ENV=production
+ARG NUXT_HOST=0.0.0.0
+ARG NUXT_PORT=3000
+
+# 設置環境變量
+ENV NODE_ENV=${NODE_ENV} \
+    NUXT_HOST=${NUXT_HOST} \
+    NUXT_PORT=${NUXT_PORT}
+
+# 安裝 pnpm
 RUN corepack enable && corepack prepare pnpm@latest --activate
 
-# 设置工作目录
+# 設置工作目錄
 WORKDIR /app
 
-# 复制 package.json 和 pnpm-lock.yaml
+# 複製 package.json 和 pnpm-lock.yaml
 COPY package*.json pnpm-lock.yaml ./
 
-# 安装依赖
-RUN pnpm install
+# 安裝依賴
+RUN pnpm install --frozen-lockfile
 
-# 复制源代码
+# 複製源代碼
 COPY . .
 
-# 构建应用
+# 構建應用
 RUN pnpm build
 
-# 使用更轻量级的镜像作为运行环境
+# 使用更輕量級的鏡像作為運行環境
 FROM node:20-slim
+
+# 創建非 root 用戶
+RUN addgroup --system --gid 1001 nodejs && \
+    adduser --system --uid 1001 nuxt
 
 WORKDIR /app
 
-# 从构建阶段复制必要文件
-COPY --from=builder /app/.output /app/.output
-COPY --from=builder /app/public /app/public
+# 從構建階段複製必要文件
+COPY --from=builder --chown=nuxt:nodejs /app/.output /app/.output
+COPY --from=builder --chown=nuxt:nodejs /app/public /app/public
 
-# 设置环境变量
-ENV NODE_ENV=production
-ENV NUXT_HOST=0.0.0.0
-ENV NUXT_PORT=3000
+# 設置環境變量
+ENV NODE_ENV=production \
+    NUXT_HOST=0.0.0.0 \
+    NUXT_PORT=3000
+
+# 切換到非 root 用戶
+USER nuxt
+
+# 健康檢查
+HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
+    CMD curl -f http://localhost:${NUXT_PORT}/api/health || exit 1
 
 # 暴露端口
-EXPOSE 3000
+EXPOSE ${NUXT_PORT}
 
-# 启动命令
+# 啟動命令
 CMD [ "node", ".output/server/index.mjs" ]
