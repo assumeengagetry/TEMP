@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  nuxt-app:
+    build: .
+    container_name: nuxt-app
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+    # 如果需要使用 nginx 反向代理，添加網絡配置
+    networks:
+      - web
+
+  # Nginx 服務（可選）
+  nginx:
+    image: nginx:alpine
+    container_name: nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/ssl:/etc/nginx/ssl
+      - ./nginx/data:/var/www/html
+    depends_on:
+      - nuxt-app
+    networks:
+      - web
+    restart: unless-stopped
+
+networks:
+  web:
+    driver: bridge
