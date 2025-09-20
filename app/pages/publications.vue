@@ -110,18 +110,18 @@
         <!-- ArXiv Papers -->
         <div class="bg-white rounded-lg shadow-lg p-8">
           <h2 class="text-2xl font-semibold text-gray-800 mb-6">
-            {{ t('publications.Book') }}
+            {{ t('Publications Arxiv') }}
           </h2>
           <div class="border-l-4 border-blue-500 pl-6">
             <h3 class="text-xl font-semibold text-gray-800 mb-2">
-              {{ t('publications.book1.title') }}
+              {{ t('publications.arxiv1.title') }}
             </h3>
-            <p class="text-gray-600 mb-2">{{ t('publications.book1.authors') }}</p>
-            <p class="text-gray-500 text-sm mb-3">{{ t('publications.book1.year') }}</p>
-            <p class="text-gray-600 mb-3">{{ t('publications.book1.description') }}</p>
+            <p class="text-gray-600 mb-2">{{ t('publications.arxiv1.authors') }}</p>
+            <p class="text-gray-500 text-sm mb-3">{{ t('publications.arxiv1.year') }}</p>
+            <p class="text-gray-600 mb-3">{{ t('publications.arxiv1.description') }}</p>
             <div class="flex space-x-4">
               <a href="#" class="text-blue-600 hover:opacity-75 font-medium">
-                {{ t('publications.viewBook') }}
+                {{ t('publications.viewArxiv1') }}
               </a>
               <a href="#" class="text-green-600 hover:text-green-800 font-medium">
                 {{ t('publications.download') }}
