@@ -55,41 +55,27 @@
             {{ t('publications.journalPapers') }}
           </h2>
           <div class="space-y-6">
-            <div class="border-l-4 border-blue-500 pl-6">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">
-                {{ t('publications.paper1.title') }}
-              </h3>
-              <p class="text-gray-600 mb-2">{{ t('publications.paper1.authors') }}</p>
-              <p class="text-blue-600 font-medium mb-2">{{ t('publications.paper1.journal') }}</p>
-              <p class="text-gray-500 text-sm mb-3">{{ t('publications.paper1.year') }}</p>
-              <p class="text-gray-600 mb-3">{{ t('publications.paper1.abstract') }}</p>
-              <div class="flex space-x-4">
-                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">
-                  {{ t('publications.viewPaper') }}
-                </a>
-                <a href="#" class="text-green-600 hover:text-green-800 font-medium">
-                  {{ t('publications.download') }}
-                </a>
+            <template v-for="i in 7" :key="i">
+              <div class="border-l-4 pl-6 mb-6" :class="{'border-blue-500': i % 2 === 1, 'border-yellow-500': i % 2 === 0}">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                  {{ t(`publications.paper${i}.title`) }}
+                </h3>
+                <p class="text-gray-600 mb-2">{{ t(`publications.paper${i}.authors`) }}</p>
+                <p :class="{'text-blue-600': i % 2 === 1, 'text-yellow-600': i % 2 === 0}" class="font-medium mb-2">
+                  {{ t(`publications.paper${i}.journal`) }}
+                </p>
+                <p class="text-gray-500 text-sm mb-3">{{ t(`publications.paper${i}.year`) }}</p>
+                <p class="text-gray-600 mb-3">{{ t(`publications.paper${i}.abstract`) }}</p>
+                <div class="flex space-x-4">
+                  <a href="#" :class="{'text-blue-600': i % 2 === 1, 'text-yellow-600': i % 2 === 0}" class="hover:opacity-75 font-medium">
+                    {{ t('publications.viewPaper') }}
+                  </a>
+                  <a href="#" class="text-green-600 hover:text-green-800 font-medium">
+                    {{ t('publications.download') }}
+                  </a>
+                </div>
               </div>
-            </div>
-
-            <div class="border-l-4 border-yellow-500 pl-6">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">
-                {{ t('publications.paper2.title') }}
-              </h3>
-              <p class="text-gray-600 mb-2">{{ t('publications.paper2.authors') }}</p>
-              <p class="text-yellow-600 font-medium mb-2">{{ t('publications.paper2.journal') }}</p>
-              <p class="text-gray-500 text-sm mb-3">{{ t('publications.paper2.year') }}</p>
-              <p class="text-gray-600 mb-3">{{ t('publications.paper2.abstract') }}</p>
-              <div class="flex space-x-4">
-                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">
-                  {{ t('publications.viewPaper') }}
-                </a>
-                <a href="#" class="text-green-600 hover:text-green-800 font-medium">
-                  {{ t('publications.download') }}
-                </a>
-              </div>
-            </div>
+            </template>
           </div>
         </div>
 
@@ -102,25 +88,25 @@
             {{ t('publications.conferencePapers') }}
           </h2>
           <div class="space-y-6">
-            <div class="border-l-4 border-blue-500 pl-6">
+            <div v-for="i in 2" :key="i" :class="{'border-blue-500': i === 1, 'border-yellow-500': i === 2}" class="border-l-4 pl-6 mb-6">
               <h3 class="text-xl font-semibold text-gray-800 mb-2">
-                {{ t('publications.conf1.title') }}
+                {{ t(`publications.conf${i}.title`) }}
               </h3>
-              <p class="text-gray-600 mb-2">{{ t('publications.conf1.authors') }}</p>
-              <p class="text-blue-600 font-medium mb-2">{{ t('publications.conf1.conference') }}</p>
-              <p class="text-gray-500 text-sm mb-3">{{ t('publications.conf1.year') }}</p>
-              <p class="text-gray-600 mb-3">{{ t('publications.conf1.abstract') }}</p>
+              <p class="text-gray-600 mb-2">{{ t(`publications.conf${i}.authors`) }}</p>
+              <p :class="{'text-blue-600': i === 1, 'text-yellow-600': i === 2}" class="font-medium mb-2">
+                {{ t(`publications.conf${i}.conference`) }}
+              </p>
+              <p class="text-gray-500 text-sm mb-3">{{ t(`publications.conf${i}.year`) }}</p>
+              <p class="text-gray-600 mb-3">{{ t(`publications.conf${i}.abstract`) }}</p>
               <div class="flex space-x-4">
-                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="#" :class="{'text-blue-600': i === 1, 'text-yellow-600': i === 2}" class="hover:opacity-75 font-medium">
                   {{ t('publications.viewPaper') }}
                 </a>
                 <a href="#" class="text-green-600 hover:text-green-800 font-medium">
                   {{ t('publications.download') }}
                 </a>
               </div>
-            </div>
-
-            <div class="border-l-4 border-yellow-500 pl-6">
+            </div>            <div class="border-l-4 border-yellow-500 pl-6">
               <h3 class="text-xl font-semibold text-gray-800 mb-2">
                 {{ t('publications.conf2.title') }}
               </h3>
@@ -174,15 +160,15 @@
           <h2 class="text-2xl font-semibold text-gray-800 mb-6">{{ t('publications.statistics') }}</h2>
           <div class="grid md:grid-cols-4 gap-6">
             <div class="text-center">
-              <div class="text-3xl font-bold text-blue-600 mb-2">15</div>
+              <div class="text-3xl font-bold text-blue-600 mb-2">10</div>
               <div class="text-gray-600">{{ t('publications.totalPapers') }}</div>
             </div>
             <div class="text-center">
-              <div class="text-3xl font-bold text-yellow-600 mb-2">8</div>
+              <div class="text-3xl font-bold text-yellow-600 mb-2">7</div>
               <div class="text-gray-600">{{ t('publications.journalPapers') }}</div>
             </div>
             <div class="text-center">
-              <div class="text-3xl font-bold text-blue-600 mb-2">6</div>
+              <div class="text-3xl font-bold text-blue-600 mb-2">2</div>
               <div class="text-gray-600">{{ t('publications.conferencePapers') }}</div>
             </div>
             <div class="text-center">

@@ -1,7 +1,7 @@
 {
-  "name": "Shengkai Xu",
-  "title": "研究生 & 研究员",
-  "description": "热衷于无线网络、网络安全和人工智能研究。",
+  "name": "吴昆瑜",
+  "title": "本科生 & 研究员",
+  "description": "热衷于光子学、传感器和人工智能研究。",
   "nav": {
     "home": "首頁",
     "about": "關於我",
@@ -48,33 +48,68 @@
     "subtitle": "我的研究贡献和学术出版物",
     "journalPapers": "期刊论文",
     "paper1": {
-      "title": "网页应用程序的高级机器学习技术",
-      "authors": "张三, 李四, 王五",
-      "journal": "计算机科学期刊",
-      "year": "2023",
-      "abstract": "本文提出了在现代网页应用程序中实现机器学习算法的新方法。"
+      "title": "基于对称π形红外超材料的可调谐完美吸收器及其传感应用",
+      "authors": "吴昆瑜, 郑丹, 朱宇, 叶震, 林永升",
+      "journal": "Materials Today Communications",
+      "year": "2025",
+      "abstract": "我们设计了一种MEMS可调谐的π形完美吸收器，工作在中红外波段，能够实现动态双共振控制、偏振切换和高灵敏度折射率传感，适用于先进光子学应用。"
     },
     "paper2": {
-      "title": "现代网页框架中的用户体验设计",
-      "authors": "张三, 赵六, 孙七",
-      "journal": "国际网页工程期刊",
-      "year": "2022",
-      "abstract": "对当代网页开发框架中用户体验模式的综合研究。"
+      "title": "ATTRN：用于锅炉温度场重建的声学信息编码器和温度场重建解码器网络",
+      "authors": "吴昆瑜, 倪凯, 陈亮, 徐浩, 王军, 周俊, 周晓",
+      "journal": "Sensors",
+      "year": "2025",
+      "abstract": "我们开发了一种基于（Transformer-CNN）的ATTRN机器学习模型，可以直接从声学测量（飞行时间）预测锅炉炉温度场，相比传统方法提高了准确性、泛化性和工业适用性。"
+    },
+    "paper3": {
+      "title": "通过可验证情感奖励增强角色扮演对话的人物一致性",
+      "authors": "王军, 吴昆瑜, 欧阳宇",
+      "journal": "Information",
+      "year": "2025",
+      "abstract": "本文提出了可验证情感奖励（VER）来减少LLM角色扮演中的情感漂移。我们还构建了CHARCO，一个包含23万个多轮对话的数据集，包含角色和情感标签，并设计了一个基于检索增强的记忆模块。实验表明改善了情感一致性、角色保真度和对话连贯性。"
+    },
+    "paper4": {
+      "title": "具有可调谐滤波、衰减和传感特性的KI形太赫兹超材料",
+      "authors": "叶震, 郑丹, 朱宇, 吴昆瑜, 林永升",
+      "journal": "APL Materials",
+      "year": "2025",
+      "abstract": "分析了KI形太赫兹谐振器，指导参数优化以实现可调谐滤波、信号抑制和折射率传感性能。"
+    },
+    "paper5": {
+      "title": "通过增强PSO优化在异步声学网络中实现轨迹正则化定位",
+      "authors": "周俊, 赵琦, 冯志, 吴昆瑜, 张磊, 秦浩",
+      "journal": "Sensors",
+      "year": "2025",
+      "abstract": "我们提出了一个使用ToA和FoA的基于轨迹的定位框架，采用增强型PSO求解器。该方法提高了异步声学网络中的精度和鲁棒性，保持90%以上的误差在3米以内。"
+    },
+    "paper6": {
+      "title": "用于隧道无线电波传播建模的可泛化物理知识增强长程注意力网络",
+      "authors": "吴昆瑜, 倪凯, 徐浩, 王军, 秦浩, 张旭, 张旭",
+      "journal": "IEEE Transactions on Microwave Theory and Techniques",
+      "year": "2025",
+      "abstract": "我们提出了一个物理知识增强长程注意力传播网络（PLAPN），采用滑动窗口策略，可以从短程模拟数据准确高效地预测隧道中的长程无线电波传播。"
+    },
+    "paper7": {
+      "title": "基于深度强化学习的列车通信控制系统无线接入点部署智能优化",
+      "authors": "吴昆瑜, 赵琦, 冯志, 秦浩, 张旭, 张旭",
+      "journal": "IEEE Transactions on Intelligent Transportation Systems",
+      "year": "2025",
+      "abstract": "我们开发了一个深度强化学习（DRL）驱动的框架，结合基于物理的PWE仿真、基于条件生成对抗网络（cGAN）的数据增强和基于对偶深度Q网络（DQN）的优化，实现了CBTC隧道系统中准确、高效和鲁棒的接入点布置。"
     },
     "conferencePapers": "会议论文",
     "conf1": {
-      "title": "Vue.js应用程序中的实时数据处理",
-      "authors": "张三, 周八",
-      "conference": "网页开发会议 2023",
-      "year": "2023",
-      "abstract": "在Vue.js应用程序中高效实时数据处理技术的展示。"
+      "title": "基于矢量抛物方程的时间注意力隧道传播建模",
+      "authors": "徐浩, 王军, 吴昆瑜, 赵琦, 秦浩, 张旭, 张旭",
+      "conference": "IEEE MTT-S International Wireless Symposium",
+      "year": "2025",
+      "abstract": "提出了一种基于矢量抛物方程驱动的隧道电磁波传播时间注意力模型。论文已被接受。"
     },
     "conf2": {
-      "title": "现代网页应用程序的性能优化",
-      "authors": "张三, 吴九, 郑十",
-      "conference": "前端峰会 2022",
-      "year": "2022",
-      "abstract": "现代网页应用程序性能优化策略分析。"
+      "title": "RNN和LSTM网络的概念增强正则化",
+      "authors": "赵丹, 张志, 康永, 吴昆瑜, 欧阳宇, 钱刚, 钱刚",
+      "conference": "IEEE第二届深度学习与计算机视觉国际会议",
+      "year": "2025",
+      "abstract": "引入概念增强正则化以改善RNN和LSTM网络的泛化性能。"
     },
     "books": "书籍和章节",
     "book1": {
