@@ -58,7 +58,7 @@
                 <h3 class="text-xl font-semibold text-gray-800 mb-2">
                   {{ t(`publications.paper${i}.title`) }}
                 </h3>
-                <p class="text-gray-600 mb-2">{{ t(`publications.paper${i}.authors`) }}</p>
+                <p class="text-gray-600 mb-2" v-html="t(`publications.paper${i}.authors`)"></p>
                 <p :class="{'text-blue-600': i % 2 === 1, 'text-yellow-600': i % 2 === 0}" class="font-medium mb-2">
                   {{ t(`publications.paper${i}.journal`) }}
                 </p>
@@ -88,7 +88,7 @@
                 <h3 class="text-xl font-semibold text-gray-800 mb-2">
                   {{ t(`publications.conf${i}.title`) }}
                 </h3>
-                <p class="text-gray-600 mb-2">{{ t(`publications.conf${i}.authors`) }}</p>
+                <p class="text-gray-600 mb-2" v-html="t(`publications.paper${i}.authors`)"></p>
                 <p :class="{'text-blue-600': i === 1, 'text-yellow-600': i === 2}" class="font-medium mb-2">
                   {{ t(`publications.conf${i}.conference`) }}
                 </p>
@@ -116,7 +116,7 @@
             <h3 class="text-xl font-semibold text-gray-800 mb-2">
               {{ t('publications.arxiv1.title') }}
             </h3>
-            <p class="text-gray-600 mb-2">{{ t('publications.arxiv1.authors') }}</p>
+            <p class="text-gray-600 mb-2" v-html="t('publications.arxiv1.authors')"></p>
             <p class="text-gray-500 text-sm mb-3">{{ t('publications.arxiv1.year') }}</p>
             <p class="text-gray-600 mb-3">{{ t('publications.arxiv1.description') }}</p>
             <div class="flex space-x-4">

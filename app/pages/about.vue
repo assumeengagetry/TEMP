@@ -49,7 +49,7 @@
 
             <!-- Contact Links -->
             <div class="space-y-3">
-              <a href="mailto:hc663@cam.ac.uk" class="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition-colors">
+              <a href="mailto:kun2025@163.com" class="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition-colors">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                 </svg>
@@ -111,11 +111,11 @@
               <div class="mt-8">
                 <h2 class="text-2xl font-semibold text-gray-900 mb-4">Research Interests</h2>
                 <div class="flex flex-wrap gap-2">
-                  <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Wireless Networks</span>
-                  <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Cybersecurity</span>
-                  <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Internet of Things</span>
-                  <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Artificial Intelligence</span>
+                  <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Photonic Devices</span>
+                  <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Sensors</span>
                   <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Machine Learning</span>
+                  <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">EM Wave Modeling</span>
+                  <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Wireless Communication</span>
                 </div>
               </div>
             </div>

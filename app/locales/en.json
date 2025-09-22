@@ -20,7 +20,7 @@
     "location": "Sichuan University Pittsburgh Institute, China",
     "aboutMe": "About Me",
     "description": "I am a final-year undergraduate in Electrical and Computer Engineering at Sichuan University Pittsburgh Institute (SCUPI), graduating in 2026 with a GPA of 3.95/4.00 (top of my cohort). My research lies at the intersection of photonics and artificial intelligence, where I develop physics-informed models, photonic devices, and machine learning methods for sensing, wireless propagation, and intelligent system design.",
-    "description2": "I have authored or co-authored 8 journal papers and 4 conference papers. My long-term goal is to pursue a PhD in Photonics + AI to address challenges in sensing, communication, and computational hardware.",
+    "description2": "I have authored or co-authored 8 journal papers and 2 conference papers. My long-term goal is to pursue a PhD in Photonics + AI to address challenges in sensing, communication, and computational hardware.",
     "experience": "Research Experience",
     "job1": {
       "title": "Research Assistant",
@@ -55,49 +55,49 @@
     "journalPapers": "Journal Papers",
     "paper1": {
       "title": " Generalizable Physics-Informed Long-Range Attentive Network for Radio Wave Propagation Modeling in Tunnels",
-      "authors": "Wu, K., Ni, K., Xu, H., Wang, J., Qin, H., Zhang, X., & Zhang, X.",
+      "authors": "<b>Wu, K.</b>, Ni, K., Xu, H., Wang, J., Qin, H., Zhang, X., & Zhang, X.",
       "journal": "IEEE Transactions on Microwave Theory and Techniques",
       "year": "2025",
       "abstract": "We propose a physics-informed long-range attentive propagation network (PLAPN) with a sliding window strategy to accurately and efficiently predict long-range radio wave propagation in tunnels from short-range simulation data."
     },
     "paper2": {
       "title": "Intelligent Optimization of Wireless Access Point Deployment for Communication-Based Train Control Systems Using Deep Reinforcement Learning",
-      "authors": "Wu, K., Zhao, Q., Feng, Z., Qin, H., Zhang, X., & Zhang, X.",
+      "authors": "<b>Wu, K.</b>, Zhao, Q, Feng, Z., Qin, H., Zhang, X., & Zhang, X.",
       "journal": "IEEE Transactions on Intelligent Transportation Systems",
       "year": "2025",
       "abstract": "We develop a Deep Reinforce Learning (DRL)-driven framework combining physics-based PWE simulation, conditional Generative Adversarial Network (cGAN)-based data augmentation, and Dueling Deep Q-Network (DQN) optimization to achieve accurate, efficient, and robust access point placement for CBTC tunnel systems."
     },
     "paper3": {
       "title": "Tunable Perfect Absorber Using Symmetrical π-Shaped Infrared Metamaterial for Sensing Application",
-      "authors": "Wu, K., Zheng, D., Zhu, Y., Ye, Z., & Lin, Y.-S.",
+      "authors": "<b>Wu, K.</b>, Zheng, D., Zhu, Y., Ye, Z., & Lin, Y.-S.",
       "journal": "Materials Today Communications",
       "year": "2025",
       "abstract": "We designed a MEMS-tunable π-shaped perfect absorber in the mid-infrared (MIR) range that enables dynamic dual-resonance control, polarization switching, and high-sensitivity refractive index sensing for advanced photonic applications."
     },
     "paper4": {
       "title": "ATTRN: Acoustic Information Encoder and Temperature Field Reconstruction Decoder Network for Boiler Temperature Field Reconstruction",
-      "authors": "Wu, K., Ni, K., Chen, L., Xu, H., Wang, J., Zhou, J., & Zhou, X.",
+      "authors": "<b>Wu, K.</b>, Ni, K., Chen, L., Xu, H., Wang, J., Zhou, J., & Zhou, X.",
       "journal": "Sensors",
       "year": "2025",
       "abstract": "We developed an (Transformer-CNN-based) ATTRN machine learning model that directly predicts boiler furnace temperature fields from acoustic measurements (Time of flight), improving accuracy, generalization, and industrial applicability over traditional methods."
     },
     "paper5": {
       "title": "Enhancing Character-Coherent Role-Playing Dialogue with a Verifiable Emotion Reward",
-      "authors": "Wang, J., Wu, K., & Ouyang, Y.",
+      "authors": "Wang, J., <b>Wu, K.</b>, & Ouyang, Y.",
       "journal": "Information",
       "year": "2025",
       "abstract": "This paper introduces a Verifiable Emotion Reward (VER) to reduce emotional drift in role-playing with LLMs. We also construct CHARCO, a 230k multi-turn dataset with persona and emotion labels, and design a retrieval-augmented memory module. Experiments show improved emotional consistency, role fidelity, and dialogue coherence."
     },
     "paper6": {
       "title": "KI-Shaped Terahertz Metamaterial with Tunable Filtering, Attenuating, and Sensing Characteristics",
-      "authors": "Ye, Z., Zheng, D., Zhu, Y., Wu, K., & Lin, Y.-S.",
+      "authors": "Ye, Z., Zheng, D., Zhu, Y., <b>Wu, K.</b>, & Lin, Y.-S.",
       "journal": "APL Materials",
       "year": "2025",
       "abstract": "Analyzed KI-shaped terahertz resonators, guiding parameter optimization to achieve tunable filtering, signal suppression, and refractive index sensing performance."
     },
     "paper7": {
       "title": "Trajectory-Regularized Localization in Asynchronous Acoustic Networks via Enhanced PSO Optimization",
-      "authors": "Zhou, J., Zhao, Q., Feng, Z., Wu, K., Zhang, L., & Qin, H.",
+      "authors": "Zhou, J., Zhao, Q, Feng, Z, <b>Wu, K.</b>, Zhang, L., & Qin, H.",
       "journal": "Sensors",
       "year": "2025",
       "abstract": "We propose a trajectory-based localization framework using ToA and FoA with an enhanced PSO solver. The method improves accuracy and robustness in asynchronous acoustic networks, keeping over 90% of errors within 3 m."
@@ -106,14 +106,14 @@
     "conferencePapers": "Conference Papers",
     "conf1": {
       "title": "Vector Parabolic Equation-Driven Temporal Attention Model for Propagation Modeling in Tunnels",
-      "authors": "Xu, H., Wang, J., Wu, K., Zhao, Q., Qin, H., Zhang, X., & Zhang, X.",
+      "authors": "Xu, H., Wang, J., <b>Wu, K.</b>, Zhao, Q, Qin, H., Zhang, X., & Zhang, X.",
       "conference": "IEEE MTT-S International Wireless Symposium",
       "year": "2025",
       "abstract": "Presented a temporal attention model for EM wave propagation in tunnels, driven by the vector parabolic equation. Manuscript accepted."
     },
     "conf2": {
       "title": "Conceptor-Augmented Regularization for RNN and LSTM Networks",
-      "authors": "Zhao, D., Zhang, Z., Kang, Y., Wu, K., Ouyang, Y., Qian, G., & Ouyang, Y., Qian, G.",
+      "authors": "Zhao, D., Zhang, Z., Kang, Y., <b>Wu, K.</b>, Ouyang, Y., Qian, G., & Ouyang, Y., Qian, G.",
       "conference": "IEEE 2nd International Conference on Deep Learning and Computer Vision",
       "year": "2025",
       "abstract": "Introduced conceptor-augmented regularization to improve the generalization of RNN and LSTM networks."
@@ -122,7 +122,7 @@
     "ArXiv": "ArXiv Papers",
     "arxiv1": {
       "title": "Enhancing Code LLMs with Reinforcement Learning in Code Generation: A Survey",
-      "authors": "Wang, J., Zhang, Z., He, Y., Song, Y., Shi, T., Li, Y., Xu, H., Wu, K., Qian, G., Chen, Q., & He, L.",
+      "authors": "Wang, J., Zhang, Z., He, Y., Song, Y., Shi, T., Li, Y., Xu, H., <b>Wu, K.</b>, Qian, G., Chen, Q., & He, L.",
       "year": "2025",
       "description": "Survey on improving code generation in large language models (LLMs) using reinforcement learning techniques. arXiv preprint arXiv:2412.20367."
     },
