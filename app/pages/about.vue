@@ -65,7 +65,7 @@
 
               <a href="https://www.xiaohongshu.com/user/profile/5f5b7b9e0000000001005fa1" target="_blank" class="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition-colors">
                 <div class="w-5 h-5 bg-red-500 text-white rounded flex items-center justify-center text-xs font-bold">
-                  小
+                  红
                 </div>
                 <span>小红书</span>
               </a>
@@ -87,15 +87,10 @@
               <div class="flex flex-col lg:flex-row gap-8 mb-6">
                 <div class="flex-1">
                   <p class="text-gray-700 mb-4">
-                    {{ t('about.description') }} I also had the pleasure of participating in a summer research program with Prof. Pietro Liò at the Artificial Intelligence Group.
+                    {{ t('about.description') }} 
                   </p>
-                  
-                  <p class="text-gray-700 mb-4">
-                    Prior to Cambridge, I have worked on wireless networks and cybersecurity under the guidance of Prof. Zhezhuang Xu and Dr. Meng Yuan. Besides, I was honored to be selected as an Undergraduate Scholar at the leading conferences AAAI 2024 and SIGKDD 2024.
-                  </p>
-                  
                   <p class="text-gray-700">
-                    {{ t('about.description2') }} If you are interested in any aspect of me, I am always open to discussions and academic collaborations. Feel free to reach out to me at — <a href="mailto:hc663@cam.ac.uk" class="text-blue-600 hover:text-blue-800">hc663 [at] cam.ac.uk</a>
+                    {{ t('about.description2') }} 
                   </p>
                 </div>
                 
