@@ -1,225 +1,230 @@
 {
-  "name": "吴昆瑜",
-  "title": "本科生 & 研究员",
-  "description": "热衷于光子学、传感器和人工智能研究。",
-  "nav": {
-    "home": "首頁",
-    "about": "關於我",
-    "publications": "出版物",
-    "awards": "獎項",
-    "hobbies": "愛好"
-  },
-  "home": {
-    "aboutDesc": "了解更多關於我的背景、經驗和技能",
-    "publicationsDesc": "探索我的研究論文和學術出版物",
-    "awardsDesc": "查看我的成就和認可",
-    "hobbiesDesc": "發現我工作之外的興趣和活動"
-  },
-  "about": {
-    "title": "关于我",
-    "location": "剑桥，英国",
-    "aboutMe": "关于我",
-    "description": "我是剑桥大学万物互联组的研究生，在Ozgur Akan教授的指导下，获得剑桥信托基金和中国国家留学基金委奖学金资助。",
-    "description2": "我的研究兴趣包括无线网络、网络安全和人工智能。我相信创造能够对人们生活产生积极影响的技术。",
-    "experience": "研究经验",
-    "job1": {
-      "title": "研究生",
-      "company": "剑桥大学",
-      "period": "2023 - 至今",
-      "description": "在万物互联组进行研究，专注于无线网络和物联网技术。"
-    },
-    "job2": {
-      "title": "研究助理",
-      "company": "前大学",
-      "period": "2021 - 2023",
-      "description": "在Zhezhuang Xu教授和Meng Yuan博士的指导下研究无线网络和网络安全。"
-    },
-    "education": "教育背景",
-    "degree": "计算机科学哲学硕士",
-    "university": "剑桥大学",
-    "graduation": "2025 (预期)",
-    "major": "专攻无线网络和物联网",
-    "skills": "研究领域",
-    "frontend": "无线网络",
-    "backend": "网络安全"
-  },
-  "publications": {
-    "title": "出版物",
-    "subtitle": "我的研究贡献和学术出版物",
-    "journalPapers": "期刊论文",
-    "paper1": {
-      "title": "基于对称π形红外超材料的可调谐完美吸收器及其传感应用",
-      "authors": "吴昆瑜, 郑丹, 朱宇, 叶震, 林永升",
-      "journal": "Materials Today Communications",
-      "year": "2025",
-      "abstract": "我们设计了一种MEMS可调谐的π形完美吸收器，工作在中红外波段，能够实现动态双共振控制、偏振切换和高灵敏度折射率传感，适用于先进光子学应用。"
-    },
-    "paper2": {
-      "title": "ATTRN：用于锅炉温度场重建的声学信息编码器和温度场重建解码器网络",
-      "authors": "吴昆瑜, 倪凯, 陈亮, 徐浩, 王军, 周俊, 周晓",
-      "journal": "Sensors",
-      "year": "2025",
-      "abstract": "我们开发了一种基于（Transformer-CNN）的ATTRN机器学习模型，可以直接从声学测量（飞行时间）预测锅炉炉温度场，相比传统方法提高了准确性、泛化性和工业适用性。"
-    },
-    "paper3": {
-      "title": "通过可验证情感奖励增强角色扮演对话的人物一致性",
-      "authors": "王军, 吴昆瑜, 欧阳宇",
-      "journal": "Information",
-      "year": "2025",
-      "abstract": "本文提出了可验证情感奖励（VER）来减少LLM角色扮演中的情感漂移。我们还构建了CHARCO，一个包含23万个多轮对话的数据集，包含角色和情感标签，并设计了一个基于检索增强的记忆模块。实验表明改善了情感一致性、角色保真度和对话连贯性。"
-    },
-    "paper4": {
-      "title": "具有可调谐滤波、衰减和传感特性的KI形太赫兹超材料",
-      "authors": "叶震, 郑丹, 朱宇, 吴昆瑜, 林永升",
-      "journal": "APL Materials",
-      "year": "2025",
-      "abstract": "分析了KI形太赫兹谐振器，指导参数优化以实现可调谐滤波、信号抑制和折射率传感性能。"
-    },
-    "paper5": {
-      "title": "通过增强PSO优化在异步声学网络中实现轨迹正则化定位",
-      "authors": "周俊, 赵琦, 冯志, 吴昆瑜, 张磊, 秦浩",
-      "journal": "Sensors",
-      "year": "2025",
-      "abstract": "我们提出了一个使用ToA和FoA的基于轨迹的定位框架，采用增强型PSO求解器。该方法提高了异步声学网络中的精度和鲁棒性，保持90%以上的误差在3米以内。"
-    },
-    "paper6": {
-      "title": "用于隧道无线电波传播建模的可泛化物理知识增强长程注意力网络",
-      "authors": "吴昆瑜, 倪凯, 徐浩, 王军, 秦浩, 张旭, 张旭",
-      "journal": "IEEE Transactions on Microwave Theory and Techniques",
-      "year": "2025",
-      "abstract": "我们提出了一个物理知识增强长程注意力传播网络（PLAPN），采用滑动窗口策略，可以从短程模拟数据准确高效地预测隧道中的长程无线电波传播。"
-    },
-    "paper7": {
-      "title": "基于深度强化学习的列车通信控制系统无线接入点部署智能优化",
-      "authors": "吴昆瑜, 赵琦, 冯志, 秦浩, 张旭, 张旭",
-      "journal": "IEEE Transactions on Intelligent Transportation Systems",
-      "year": "2025",
-      "abstract": "我们开发了一个深度强化学习（DRL）驱动的框架，结合基于物理的PWE仿真、基于条件生成对抗网络（cGAN）的数据增强和基于对偶深度Q网络（DQN）的优化，实现了CBTC隧道系统中准确、高效和鲁棒的接入点布置。"
-    },
-    "conferencePapers": "会议论文",
-    "conf1": {
-      "title": "基于矢量抛物方程的时间注意力隧道传播建模",
-      "authors": "徐浩, 王军, 吴昆瑜, 赵琦, 秦浩, 张旭, 张旭",
-      "conference": "IEEE MTT-S International Wireless Symposium",
-      "year": "2025",
-      "abstract": "提出了一种基于矢量抛物方程驱动的隧道电磁波传播时间注意力模型。论文已被接受。"
-    },
-    "conf2": {
-      "title": "RNN和LSTM网络的概念增强正则化",
-      "authors": "赵丹, 张志, 康永, 吴昆瑜, 欧阳宇, 钱刚, 钱刚",
-      "conference": "IEEE第二届深度学习与计算机视觉国际会议",
-      "year": "2025",
-      "abstract": "引入概念增强正则化以改善RNN和LSTM网络的泛化性能。"
-    },
-    "books": "书籍和章节",
-    "book1": {
-      "title": "使用Vue.js进行现代网页开发",
-      "authors": "张三, 冯十一",
-      "publisher": "科技出版社",
-      "year": "2021",
-      "description": "使用Vue.js框架构建现代网页应用程序的综合指南。"
-    },
-    "viewPaper": "查看论文",
-    "viewBook": "查看书籍",
-    "download": "下载",
-    "statistics": "出版物统计",
-    "totalPapers": "总论文数",
-    "journalPapers": "期刊论文",
-    "conferencePapers": "会议论文",
-    "books": "书籍"
-  },
-  "awards": {
-    "title": "奖项和认可",
-    "subtitle": "职业生涯中的荣誉和成就",
-    "academicAwards": "学术奖项",
-    "award1": {
-      "title": "优秀研究生奖",
-      "organization": "斯坦福大学",
-      "year": "2018",
-      "description": "因研究生期间的卓越学术表现和研究贡献而获得认可。"
-    },
-    "award2": {
-      "title": "最佳研究论文奖",
-      "organization": "国际网页会议",
-      "year": "2022",
-      "description": "因在网页技术和用户体验方面最具创新性的研究论文而获奖。"
-    },
-    "researchAwards": "研究奖项",
-    "award3": {
-      "title": "技术创新奖",
-      "organization": "科技创新基金会",
-      "year": "2023",
-      "description": "因在网页应用程序开发方面开发创新解决方案而获得认可。"
-    },
-    "award4": {
-      "title": "研究卓越奖",
-      "organization": "计算机科学学会",
-      "year": "2021",
-      "description": "因对计算机科学研究和开发的杰出贡献而获奖。"
-    },
-    "professionalAwards": "专业奖项",
-    "award5": {
-      "title": "年度员工",
-      "organization": "科技公司",
-      "year": "2023",
-      "description": "因卓越的表现、领导力和对公司成功的贡献而获得认可。"
-    },
-    "award6": {
-      "title": "最佳开发者奖",
-      "organization": "开发者社区",
-      "year": "2022",
-      "description": "因对开发者社区和开源项目的杰出贡献而被同行投票选出。"
-    },
-    "statistics": "奖项统计",
-    "totalAwards": "总奖项数",
-    "academicAwards": "学术奖项",
-    "researchAwards": "研究奖项",
-    "professionalAwards": "专业奖项"
-  },
-  "hobbies": {
-    "title": "爱好和兴趣",
-    "subtitle": "让我保持灵感和平衡的活动和兴趣",
-    "photography": {
-      "title": "摄影",
-      "description": "通过镜头捕捉瞬间并探索世界。我喜欢风景、人像和街头摄影。"
-    },
-    "reading": {
-      "title": "阅读",
-      "description": "热衷于阅读小说、非小说和科幻小说。书籍帮助我获得新的视角和知识。"
-    },
-    "hiking": {
-      "title": "徒步旅行",
-      "description": "探索自然小径和山脉。徒步旅行帮助我保持活跃并与自然世界建立联系。"
-    },
-    "cooking": {
-      "title": "烹饪",
-      "description": "尝试不同的菜系和食谱。烹饪既是治疗性的，也是创意的出口。"
-    },
-    "music": {
-      "title": "音乐",
-      "description": "聆听各种流派，包括爵士乐、古典音乐和摇滚乐。音乐激发创造力和放松。"
-    },
-    "travel": {
-      "title": "旅行",
-      "description": "探索新文化和目的地。旅行拓宽视野并创造持久的回忆。"
-    },
-    "recentActivities": "最近活动",
-    "lastWeek": "上周",
-    "thisWeek": "本周",
-    "activity1": "完成了摄影工作坊",
-    "activity2": "读完了《编程的艺术》",
-    "activity3": "徒步登上了塔玛尔派斯山",
-    "activity4": "从头开始制作意大利面",
-    "activity5": "参加了爵士音乐会",
-    "activity6": "计划去日本旅行",
-    "favoriteQuotes": "最喜欢的引言",
-    "quote1": {
-      "text": "预测未来最好的方法就是发明它。",
-      "author": "艾伦·凯"
-    },
-    "quote2": {
-      "text": "生活就是当你忙于制定其他计划时发生的事情。",
-      "author": "约翰·列侬"
-    }
-  }
+ "name": "Kunyu Wu",
+ "title": "本科生与研究员",
+ "description": "热衷于光子学、传感器与人工智能研究。",
+ "nav": {
+ "home": "首页",
+ "about": "关于",
+ "publications": "论文",
+ "awards": "奖项",
+ "hobbies": "爱好"
+ },
+ "home": {
+ "aboutDesc": "了解我的背景、经验与技能",
+ "publicationsDesc": "查看我的研究论文与学术出版物",
+ "awardsDesc": "查看我的成就与荣誉",
+ "hobbiesDesc": "了解我工作之外的兴趣与活动"
+ },
+ "about": {
+ "title": "关于我",
+ "location": "四川大学匹兹堡学院，中国",
+ "aboutMe": "关于我",
+ "description": "我是在四川大学匹兹堡学院（SCUPI）就读的最后一年电气与计算机工程本科生，预计于2026年毕业，绩点为3.95/4.00（班级第一）。我的研究位于光子学与人工智能的交叉领域，致力于开发物理信息驱动的模型、光子器件，以及用于传感、无线传播和智能系统设计的机器学习方法。",
+ "description2": "我已作为作者或合著者发表8篇期刊论文和2篇会议论文。我的长期目标是攻读光子学 + 人工智能方向的博士学位，以解决传感、通信与计算硬件方面的挑战。",
+ "experience": "研究经历",
+ "job1": {
+ "title": "研究助理",
+ "company": "四川大学智能控制研究所",
+ "period": "Sep 2023 – Mar 2024",
+ "description": "从事声学感知研究。设计了用于温度场重建的 ATTRN（Transformer-CNN）模型。"
+ },
+ "job2": {
+ "title": "研究助理",
+ "company": "N/MEMS-Lab, Sichuan University",
+ "period": "Jun 2024 – Jul 2025",
+ "description": "研究 MEMS 集成的光子器件和超材料，包括 π 形红外吸收器和 KI 形太赫兹谐振器。进行了 FDTD 仿真、等效电路建模以及基于 MEMS 的可重构设计。"
+ },
+ "job3": {
+ "title": "研究助理",
+ "company": "四川大学匹兹堡学院",
+ "period": "Sep 2024 – Present",
+ "description": "专注于用于电磁传播与无线系统的物理信息机器学习。开发了 PLAPN，一种用于隧道传播的 CNN–注意力混合模型。"
+ },
+ "education": "教育背景",
+ "degree": "电气与计算机工程工学士（BEng）",
+ "university": "四川大学",
+ "graduation": "2026 (Expected)",
+ "major": "主修光子学与人工智能",
+ "skills": "研究领域",
+ "frontend": "FDTD 仿真、VPE 建模、光子器件设计",
+ "backend": "Python、C++、MATLAB、PyTorch、机器学习"
+ },
+ "publications": {
+ "title": "Publications",
+ "subtitle": "我的研究贡献与学术出版物",
+ "journalPapers": "期刊论文",
+ "paper1": {
+ "title": "一种可泛化的物理信息长程注意力网络用于隧道中无线电波传播建模",
+ "authors": "<b>Wu, K.</b>, Ni, K., Xu, H., Wang, J., Qin, H., Zhang, X., & Zhang, X.",
+ "journal": "IEEE Transactions on Microwave Theory and Techniques",
+ "year": "2025",
+ "abstract": "我们提出了一种物理信息驱动的长程注意力传播网络（PLAPN），并采用滑动窗口策略，从短程仿真数据中准确且高效地预测隧道中无线电波的长程传播。"
+ },
+ "paper2": {
+ "title": "基于深度强化学习的通信列车控制系统无线接入点部署的智能优化",
+ "authors": "<b>Wu, K.</b>, Zhao, Q, Feng, Z., Qin, H., Zhang, X., & Zhang, X.",
+ "journal": "IEEE Transactions on Intelligent Transportation Systems",
+ "year": "2025",
+ "abstract": "我们开发了一个由深度强化学习（DRL）驱动的框架，将基于物理的 PWE 仿真、基于条件生成对抗网络（cGAN）的数据增强和 Dueling DQN 优化结合起来，以实现对 CBTC 隧道系统接入点部署的准确、高效且鲁棒的优化。"
+ },
+ "paper3": {
+ "title": "用于传感应用的对称 π 形红外超材料可调谐完美吸收器",
+ "authors": "<b>Wu, K.</b>, Zheng, D., Zhu, Y., Ye, Z., & Lin, Y.-S.",
+ "journal": "Materials Today Communications",
+ "year": "2025",
+ "abstract": "我们设计了一种在中红外（MIR）范围内可通过 MEMS 调谐的 π 形完美吸收器，能够实现动态双谐振控制、极化切换以及高灵敏度的折射率传感，用于先进的光子学应用。"
+ },
+ "paper4": {
+ "title": "ATTRN：用于锅炉温度场重建的声学信息编码器与温度场重建解码器网络",
+ "authors": "<b>Wu, K.</b>, Ni, K., Chen, L., Xu, H., Wang, J., Zhou, J., & Zhou, X.",
+ "journal": "Sensors",
+ "year": "2025",
+ "abstract": "我们开发了一个基于 Transformer-CNN 的 ATTRN 机器学习模型，该模型直接从声学测量（飞行时间）预测锅炉炉膛温度场，在准确性、泛化能力和工业适用性方面优于传统方法。"
+ },
+ "paper5": {
+ "title": "使用可验证情感奖励增强角色扮演对话的一致性",
+ "authors": "Wang, J., <b>Wu, K.</b>, & Ouyang, Y.",
+ "journal": "Information",
+ "year": "2025",
+ "abstract": "本文引入了一种可验证情感奖励（VER）以减少大型语言模型在角色扮演中的情感漂移。我们还构建了带有角色与情感标签的 23 万多轮对话数据集 CHARCO，并设计了检索增强的记忆模块。实验表明情感一致性、角色忠实度和对话连贯性均有所提升。"
+ },
+ "paper6": {
+ "title": "具有可调谐滤波、衰减与传感特性的 KI 形太赫兹超材料",
+ "authors": "Ye, Z., Zheng, D., Zhu, Y., <b>Wu, K.</b>, & Lin, Y.-S.",
+ "journal": "APL Materials",
+ "year": "2025",
+ "abstract": "分析了 KI 形太赫兹谐振器，指导参数优化以实现可调谐滤波、信号抑制和折射率传感性能。"
+ },
+ "paper7": {
+ "title": "通过增强的 PSO 优化在异步声学网络中实现轨迹约束的定位",
+ "authors": "Zhou, J., Zhao, Q, Feng, Z, <b>Wu, K.</b>, Zhang, L., & Qin, H.",
+ "journal": "Sensors",
+ "year": "2025",
+ "abstract": "我们提出了一种基于轨迹的定位框架，使用 ToA 和 FoA 并配以增强的 PSO 求解器。该方法提高了异步声学网络中的准确性和鲁棒性，且超过 90% 的误差保持在 3 米以内。"
+ },
+ "conferencePapers": "会议论文",
+ "conf1": {
+ "title": "基于矢量抛物波方程驱动的时序注意力模型用于隧道传播建模",
+ "authors": "Xu, H., Wang, J., <b>Wu, K.</b>, Zhao, Q, Qin, H., Zhang, X., & Zhang, X.",
+ "conference": "IEEE MTT-S International Wireless Symposium",
+ "year": "2025",
+ "abstract": "提出了一种由矢量抛物波方程驱动的隧道电磁波传播时序注意力模型。手稿已被接收。"
+ },
+ "conf2": {
+ "title": "用于 RNN 与 LSTM 网络的 Conceptor 增强正则化",
+ "authors": "Zhao, D., Zhang, Z., Kang, Y., <b>Wu, K.</b>, Ouyang, Y., Qian, G., & Ouyang, Y., Qian, G.",
+ "conference": "IEEE 2nd International Conference on Deep Learning and Computer Vision",
+ "year": "2025",
+ "abstract": "提出了 Conceptor 增强的正则化方法，以改善 RNN 和 LSTM 网络的泛化能力。"
+ },
+ "ArXiv": "ArXiv 论文",
+ "arxiv1": {
+ "title": "在代码生成中使用强化学习增强代码型大模型的综述",
+ "authors": "Wang, J., Zhang, Z., He, Y., Song, Y., Shi, T., Li, Y., Xu, H., <b>Wu, K.</b>, Qian, G., Chen, Q., & He, L.",
+ "year": "2025",
+ "description": "关于使用强化学习技术提升代码生成的大型语言模型（LLMs）的综述。arXiv 预印本 arXiv:2412.20367。"
+ },
+ "viewPaper": "查看论文",
+ "viewBook": "查看书籍",
+ "download": "下载",
+ "statistics": "出版统计",
+ "totalPapers": "论文总数",
+ "journalPapers": "期刊论文",
+ "conferencePapers": "会议论文",
+ "books": "书籍"
+ },
+ "awards": {
+ "title": "奖项与荣誉",
+ "subtitle": "职业生涯中的荣誉与成就",
+
+"academicAwards": "学术奖项",
+ "award1": {
+ "title": "院长名单（Dean's List）",
+ "organization": "四川大学匹兹堡学院",
+ "year": "2023",
+ "description": "因学术优秀被表彰，位列项目前茅。"
+ },
+ "award2": {
+ "title": "一等综合奖学金",
+ "organization": "四川大学",
+ "year": "2023",
+ "description": "因在学术、科研与课外活动方面的杰出表现而获奖。"
+ },
+ "award3": {
+ "title": "优秀学生",
+ "organization": "四川大学",
+ "year": "2023",
+ "description": "因学术成就与领导力被评为优秀学生之一。"
+ },
+
+"researchAwards": "科研与教学奖项",
+ "award4": {
+ "title": "优秀助教",
+ "organization": "四川大学匹兹堡学院",
+ "year": "2024",
+ "description": "因在本科教学与同伴辅导方面表现优异而获表彰。"
+ },
+
+"professionalAwards": "其他成就",
+ "award5": {
+ "title": "男子 800 米赛跑第 6 名",
+ "organization": "四川大学体育运动会",
+ "year": "2023",
+ "description": "在男子 800 米比赛中获得第六名，展现了韧性与运动能力。"
+ },
+ "statistics": "奖项统计",
+ "totalAwards": "奖项总数",
+ "academicAwards": "学术奖项",
+ "researchAwards": "科研奖项",
+ "professionalAwards": "职业奖项"
+
+},
+ "hobbies": {
+ "title": "爱好与兴趣",
+ "subtitle": "让我保持灵感和平衡的活动与兴趣",
+ "photography": {
+ "title": "摄影",
+ "description": "通过镜头捕捉瞬间与探索世界。我喜欢风景、人像与街头摄影。"
+ },
+ "reading": {
+ "title": "阅读",
+ "description": "热衷于小说、非虚构与科幻类书籍。书籍帮助我获得新视角与知识。"
+ },
+ "hiking": {
+ "title": "徒步",
+ "description": "探索自然小径与山脉。徒步让我保持活力并与自然连接。"
+ },
+ "cooking": {
+ "title": "烹饪",
+ "description": "尝试不同的菜系与食谱。烹饪既是治愈过程也是创造性表达。"
+ },
+ "music": {
+ "title": "音乐",
+ "description": "聆听多种风格，包括爵士、古典与摇滚。音乐激发创造力与放松。"
+ },
+ "travel": {
+ "title": "旅行",
+ "description": "探索新文化与目的地。旅行开阔视野并创造难忘回忆。"
+ },
+ "recentActivities": "近期活动",
+ "lastWeek": "上周",
+ "thisWeek": "本周",
+ "activity1": "完成了一次摄影工作坊",
+ "activity2": "阅读完《编程的艺术》",
+ "activity3": "徒步了 Mount Tamalpais",
+ "activity4": "从零制作了意大利面",
+ "activity5": "参加了一场爵士演唱会",
+ "activity6": "计划前往日本旅行",
+ "favoriteQuotes": "喜欢的名言",
+ "quote1": {
+ "text": "预测未来的最好方式是创造未来。",
+ "author": "Alan Kay"
+ },
+ "quote2": {
+ "text": "生活就是当你忙于制定其他计划时发生的事情。",
+ "author": "John Lennon"
+ }
+
+}
+
 }
