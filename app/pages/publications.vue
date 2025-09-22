@@ -65,12 +65,7 @@
                 <p class="text-gray-500 text-sm mb-3">{{ t(`publications.paper${i}.year`) }}</p>
                 <p class="text-gray-600 mb-3">{{ t(`publications.paper${i}.abstract`) }}</p>
                 <div class="flex space-x-4">
-                  <a href="#" :class="{'text-blue-600': i % 2 === 1, 'text-yellow-600': i % 2 === 0}" class="hover:opacity-75 font-medium">
-                    {{ t('publications.viewPaper') }}
-                  </a>
-                  <a href="#" class="text-green-600 hover:text-green-800 font-medium">
-                    {{ t('publications.download') }}
-                  </a>
+
                 </div>
               </div>
             </template>
@@ -95,12 +90,7 @@
                 <p class="text-gray-500 text-sm mb-3">{{ t(`publications.conf${i}.year`) }}</p>
                 <p class="text-gray-600 mb-3">{{ t(`publications.conf${i}.abstract`) }}</p>
                 <div class="flex space-x-4">
-                  <a href="#" :class="{'text-blue-600': i === 1, 'text-yellow-600': i === 2}" class="hover:opacity-75 font-medium">
-                    {{ t('publications.viewPaper') }}
-                  </a>
-                  <a href="#" class="text-green-600 hover:text-green-800 font-medium">
-                    {{ t('publications.download') }}
-                  </a>
+
                 </div>
               </div>
             </template>
@@ -120,12 +110,7 @@
             <p class="text-gray-500 text-sm mb-3">{{ t('publications.arxiv1.year') }}</p>
             <p class="text-gray-600 mb-3">{{ t('publications.arxiv1.description') }}</p>
             <div class="flex space-x-4">
-              <a href="#" class="text-blue-600 hover:opacity-75 font-medium">
-                {{ t('publications.viewArxiv1') }}
-              </a>
-              <a href="#" class="text-green-600 hover:text-green-800 font-medium">
-                {{ t('publications.download') }}
-              </a>
+
             </div>
           </div>
         </div>
